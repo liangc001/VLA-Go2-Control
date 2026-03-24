@@ -1,0 +1,67 @@
+# 大文件和生成的数据
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.mp4
+*.avi
+*.mkv
+*.mov
+logs/
+outputs/
+videos/
+wandb/
+
+# VLA模型文件（用户自行下载）
+models/vla/*
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 环境
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# IsaacLab（用户自行安装）
+IsaacLab/
+
+# 备份
+backups/
+*.bak
