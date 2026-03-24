@@ -50,68 +50,23 @@ Higher quality videos are available in the local experiment logs:
 
 ## 🏗️ Architecture
 
-<p align="center">
-  <img src="assets/images/architecture_overview.png" width="90%" alt="VLA Architecture">
-</p>
+The VLA control system consists of the following layers:
 
-<p align="center"><em>VLA Control Pipeline Overview</em></p>
+| Layer | Description | Components |
+|-------|-------------|------------|
+| **Input** | Camera + Text | RGB Image, Text Prompt "go forward" |
+| **Backend** | VLA Models | Rule / Dummy VLA / Real VLA (Qwen3.5) |
+| **Control** | Velocity Commands | (vx, vy, wz) |
+| **Execution** | Robot Policy | RSL-RL + Unitree Go2 |
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    VLA Control Pipeline                          │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  Input Layer                                                    │
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐  │
-│  │ Front Camera │    │ Text Prompt │    │ Velocity Commands   │  │
-│  │  RGB Image   │    │ "go forward"│    │ (vx, vy, wz)       │  │
-│  └─────────────┘    └─────────────┘    └─────────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  Backend Layer (Pluggable)                                      │
-│  ┌─────────┐   ┌──────────┐   ┌─────────┐   ┌────────────────┐ │
-│  │  Rule   │   │ Dummy VLA│   │ Real VLA│   │   User Code    │ │
-│  │ Backend │   │ Backend  │   │ Backend │   │   (Custom)     │ │
-│  └─────────┘   └──────────┘   └─────────┘   └────────────────┘ │
-│                                                                 │
-│  Supported VLA Models:                                          │
-│  • SmolVLM-256M-Instruct (3.3G)                                │
-│  • Qwen2-VL-2B-Instruct (4.2G)                                 │
-│  • Qwen3.5-9B (19G) ⭐ Recommended                              │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  Control Layer                                                  │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │              High-Level Velocity Commands                │   │
-│  │         (vx: forward, vy: lateral, wz: yaw rate)        │   │
-│  └─────────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  Execution Layer                                                │
-│  ┌─────────────────┐    ┌─────────────────────────────────────┐│
-│  │ RSL-RL Policy   │───▶│    Unitree Go2 (12-DOF Legs)        ││
-│  │ model_599.pt    │    │    IsaacLab Simulation              ││
-│  └─────────────────┘    └─────────────────────────────────────┘│
-└─────────────────────────────────────────────────────────────────┘
-```
+**Supported VLA Models:**
+- SmolVLM-256M-Instruct (3.3G)
+- Qwen2-VL-2B-Instruct (4.2G)
+- Qwen3.5-9B (19G) ⭐ Recommended
 
 ---
 
 ## ✨ Features
-
-<p align="center">
-  <img src="assets/images/features_comparison.png" width="90%" alt="Features Comparison">
-</p>
-
-<table>
 <tr>
 <td width="50%">
 
