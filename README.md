@@ -31,35 +31,54 @@
 
 <p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
 
-### VLA Control Examples
+### Experiment Screenshots
 
 <table>
 <tr>
-<td width="33%">
+<td width="50%">
 
-**Text Command Control**
+**Exp 1: Forward Walking**
 ```bash
 --text_command "go forward"
 ```
-<p align="center">📝</p>
+<p align="center">
+  <img src="assets/images/go2_forward.png" width="95%" alt="Forward Walking">
+</p>
 
 </td>
-<td width="33%">
+<td width="50%">
 
-**Vision + Text**
+**Exp 2: Stable Locomotion**
 ```bash
---multimodal_prompt "follow the red ball"
+--checkpoint checkpoints/model_599.pt
 ```
-<p align="center">👁️ + 📝</p>
+<p align="center">
+  <img src="assets/images/go2_walking.png" width="95%" alt="Stable Locomotion">
+</p>
 
 </td>
-<td width="33%">
+</tr>
+<tr>
+<td width="50%">
 
-**Real VLA (Qwen3.5)**
+**Exp 3: Direction Control**
 ```bash
---backend real_vla
+--text_command "turn left"
 ```
-<p align="center">🧠</p>
+<p align="center">
+  <img src="assets/images/go2_turning.png" width="95%" alt="Direction Control">
+</p>
+
+</td>
+<td width="50%">
+
+**Exp 4: Velocity Tracking**
+```bash
+--backend rule
+```
+<p align="center">
+  <img src="assets/images/go2_stable.png" width="95%" alt="Velocity Tracking">
+</p>
 
 </td>
 </tr>
@@ -122,6 +141,14 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+### Experimental Results
+
+<p align="center">
+  <img src="assets/images/experiment_comparison.png" width="90%" alt="Experiment Comparison">
+</p>
+
+<p align="center"><em>Performance comparison across different control modes</em></p>
+
 ---
 
 ## ✨ Features
@@ -163,6 +190,14 @@
 </td>
 </tr>
 </table>
+
+### Training Performance
+
+<p align="center">
+  <img src="assets/images/training_curves.png" width="70%" alt="Training Curves">
+</p>
+
+<p align="center"><em>Reward convergence during RL training (599 epochs)</em></p>
 
 ---
 
