@@ -24,10 +24,12 @@
 ## 📹 Demo Videos
 
 ### Go2 Baseline Locomotion
-<p align="center">
-  <video src="assets/videos/go2_baseline_play.mp4" width="80%" controls></video>
-</p>
+
+https://github.com/liangc001/VLA-Go2-Control/assets/videos/go2_baseline_play.mp4
+
 <p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
+
+> 💡 **Video Playback**: Click the video above to play, or view it directly in the [assets/videos/](assets/videos/) directory.
 
 ### VLA Control Examples
 
