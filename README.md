@@ -231,7 +231,7 @@ pip install transformers>=4.50.0 opencv-python pillow
 ### 3. Vision-Based Control
 
 <p align="center">
-  <img src="https://via.placeholder.com/600x300/2c3e50/ffffff?text=Vision+Control+Demo" alt="Vision Control">
+  <img src="assets/images/vision_control_demo.png" width="80%" alt="Vision Control Demo">
 </p>
 
 ```bash
@@ -249,7 +249,7 @@ pip install transformers>=4.50.0 opencv-python pillow
 ### 4. VLA Model Control (Qwen3.5)
 
 <p align="center">
-  <img src="https://via.placeholder.com/600x300/34495e/ffffff?text=VLA+Control+Pipeline" alt="VLA Pipeline">
+  <img src="assets/images/vla_pipeline.png" width="80%" alt="VLA Control Pipeline">
 </p>
 
 ```bash
