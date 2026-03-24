@@ -31,29 +31,26 @@
 
 <p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
 
-### Experiment Screenshots
+### Experiment GIFs
 
 <table>
 <tr>
 <td width="50%">
 
-**Exp 1: Forward Walking**
+**Forward Walking**
 ```bash
 --text_command "go forward"
 ```
 <p align="center">
-  <img src="assets/images/go2_forward.png" width="95%" alt="Forward Walking">
+  <img src="assets/images/go2_forward.gif" width="95%" alt="Forward Walking">
 </p>
 
 </td>
 <td width="50%">
 
-**Exp 2: Stable Locomotion**
-```bash
---checkpoint checkpoints/model_599.pt
-```
+**Stable Locomotion**
 <p align="center">
-  <img src="assets/images/go2_walking.png" width="95%" alt="Stable Locomotion">
+  <img src="assets/images/go2_walking.gif" width="95%" alt="Stable Locomotion">
 </p>
 
 </td>
@@ -61,28 +58,25 @@
 <tr>
 <td width="50%">
 
-**Exp 3: Direction Control**
-```bash
---text_command "turn left"
-```
+**Direction Control**
 <p align="center">
-  <img src="assets/images/go2_turning.png" width="95%" alt="Direction Control">
+  <img src="assets/images/go2_turning.gif" width="95%" alt="Direction Control">
 </p>
 
 </td>
 <td width="50%">
 
-**Exp 4: Velocity Tracking**
-```bash
---backend rule
-```
+**Velocity Tracking**
 <p align="center">
-  <img src="assets/images/go2_stable.png" width="95%" alt="Velocity Tracking">
+  <img src="assets/images/go2_stable.gif" width="95%" alt="Velocity Tracking">
 </p>
 
 </td>
 </tr>
 </table>
+
+> 📹 **Source**: Recorded from `logs/rsl_rl/unitree_go2_flat/2026-03-16_14-26-02/videos/play/`
+> Using checkpoint `model_599.pt` with 599 training epochs.
 
 ---
 
@@ -141,14 +135,6 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### Experimental Results
-
-<p align="center">
-  <img src="assets/images/experiment_comparison.png" width="90%" alt="Experiment Comparison">
-</p>
-
-<p align="center"><em>Performance comparison across different control modes</em></p>
-
 ---
 
 ## ✨ Features
@@ -190,14 +176,6 @@
 </td>
 </tr>
 </table>
-
-### Training Performance
-
-<p align="center">
-  <img src="assets/images/training_curves.png" width="70%" alt="Training Curves">
-</p>
-
-<p align="center"><em>Reward convergence during RL training (599 epochs)</em></p>
 
 ---
 
