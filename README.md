@@ -227,5 +227,5 @@ pip install --upgrade transformers
 
 ---
 
-**作者**: VLA Project Team
+**作者**: liangc001
 **日期**: 2026-03-24
