@@ -166,10 +166,6 @@ pip install transformers>=4.50.0 opencv-python pillow
 
 ### 3. Vision-Based Control
 
-<p align="center">
-  <img src="assets/images/vision_control_demo.png" width="80%" alt="Vision Control Demo">
-</p>
-
 ```bash
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play_with_high_level_commands.py \
   --task Isaac-Velocity-Flat-Unitree-Go2-Play-v0 \
@@ -183,10 +179,6 @@ pip install transformers>=4.50.0 opencv-python pillow
 ```
 
 ### 4. VLA Model Control (Qwen3.5)
-
-<p align="center">
-  <img src="assets/images/vla_pipeline.png" width="80%" alt="VLA Control Pipeline">
-</p>
 
 ```bash
 CUDA_VISIBLE_DEVICES=2,1 ./isaaclab.sh \
