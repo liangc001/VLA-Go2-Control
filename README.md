@@ -26,69 +26,25 @@
 ### Go2 Baseline Locomotion
 
 <p align="center">
-  <img src="assets/images/go2_baseline_demo.gif" width="80%" alt="Go2 Baseline Locomotion Demo">
+  <img src="assets/images/go2_baseline_demo.gif" width="70%" alt="Go2 Baseline Locomotion Demo">
 </p>
 
-<p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
-
-### Video Source
-
-> 📹 **Source**: `logs/rsl_rl/unitree_go2_flat/2026-03-16_14-26-02/videos/play/rl-video-step-0.mp4`
-> **Checkpoint**: `model_599.pt` (599 training epochs)
-> **Task**: `Isaac-Velocity-Flat-Unitree-Go2-Play-v0`
-
-> **Note**: This is a baseline locomotion demo recorded during standard playback. For experiments with text commands, vision control, or VLA integration, see the [Usage](#usage) section below to run your own recordings.
-
-### Additional Experiment Recordings
-
-The following GIFs are recorded from actual experiments using `play_with_high_level_commands.py` with different control modes:
-
-<table>
-<tr>
-<td width="50%">
-
-**Experiment 1**
 <p align="center">
-  <img src="assets/images/experiments/exp_2026-03-16_15-17-54.gif" width="95%">
+  <em>Baseline policy walking forward with velocity commands (~4s preview)</em>
 </p>
-<p align="center"><sub>2026-03-16 15:17:54</sub></p>
 
-</td>
-<td width="50%">
+### Full Video Recordings
 
-**Experiment 2**
-<p align="center">
-  <img src="assets/images/experiments/exp_2026-03-16_15-31-23.gif" width="95%">
-</p>
-<p align="center"><sub>2026-03-16 15:31:23</sub></p>
+Higher quality videos are available in the local experiment logs:
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+| Video | Location | Duration |
+|-------|----------|----------|
+| **Baseline Playback** | `logs/rsl_rl/.../videos/play/rl-video-step-0.mp4` | ~4s |
+| **Text Command Exp** | `logs/rsl_rl/.../videos/play_high_level_commands/2026-03-16_15-17-54/` | Variable |
+| **Vision Control Exp** | `logs/rsl_rl/.../videos/play_high_level_commands/2026-03-16_15-31-23/` | Variable |
+| **VLA Model Exp** | `logs/rsl_rl/.../videos/play_high_level_commands/2026-03-17_14-06-33/` | Variable |
 
-**Experiment 3**
-<p align="center">
-  <img src="assets/images/experiments/exp_2026-03-16_20-43-01.gif" width="95%">
-</p>
-<p align="center"><sub>2026-03-16 20:43:01</sub></p>
-
-</td>
-<td width="50%">
-
-**Experiment 4**
-<p align="center">
-  <img src="assets/images/experiments/exp_2026-03-17_14-06-33.gif" width="95%">
-</p>
-<p align="center"><sub>2026-03-17 14:06:33</sub></p>
-
-</td>
-</tr>
-</table>
-
-> 📁 **Location**: `logs/rsl_rl/unitree_go2_flat/2026-03-16_14-26-02/videos/play_high_level_commands/`
->
-> These experiments were run using the VLA control script with various configurations. Check the directory timestamps to correlate with your experiment logs.
+> 🎬 **To view full videos**: Clone the repo and play the MP4 files locally, or record your own experiments using the commands below.
 
 ---
 
