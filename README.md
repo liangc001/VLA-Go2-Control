@@ -31,52 +31,13 @@
 
 <p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
 
-### Experiment GIFs
+### Video Source
 
-<table>
-<tr>
-<td width="50%">
+> 📹 **Source**: `logs/rsl_rl/unitree_go2_flat/2026-03-16_14-26-02/videos/play/rl-video-step-0.mp4`
+> **Checkpoint**: `model_599.pt` (599 training epochs)
+> **Task**: `Isaac-Velocity-Flat-Unitree-Go2-Play-v0`
 
-**Forward Walking**
-```bash
---text_command "go forward"
-```
-<p align="center">
-  <img src="assets/images/go2_forward.gif" width="95%" alt="Forward Walking">
-</p>
-
-</td>
-<td width="50%">
-
-**Stable Locomotion**
-<p align="center">
-  <img src="assets/images/go2_walking.gif" width="95%" alt="Stable Locomotion">
-</p>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**Direction Control**
-<p align="center">
-  <img src="assets/images/go2_turning.gif" width="95%" alt="Direction Control">
-</p>
-
-</td>
-<td width="50%">
-
-**Velocity Tracking**
-<p align="center">
-  <img src="assets/images/go2_stable.gif" width="95%" alt="Velocity Tracking">
-</p>
-
-</td>
-</tr>
-</table>
-
-> 📹 **Source**: Recorded from `logs/rsl_rl/unitree_go2_flat/2026-03-16_14-26-02/videos/play/`
-> Using checkpoint `model_599.pt` with 599 training epochs.
+> **Note**: This is a baseline locomotion demo recorded during standard playback. For experiments with text commands, vision control, or VLA integration, see the [Usage](#usage) section below to run your own recordings.
 
 ---
 
