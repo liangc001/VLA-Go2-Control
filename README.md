@@ -25,11 +25,20 @@
 
 ### Go2 Baseline Locomotion
 
-https://github.com/liangc001/VLA-Go2-Control/assets/videos/go2_baseline_play.mp4
+<p align="center">
+  <a href="assets/videos/go2_baseline_play.mp4">
+    <img src="https://img.shields.io/badge/▶️-Watch%20Demo%20Video-blue?style=for-the-badge" alt="Watch Demo">
+  </a>
+</p>
+
+<p align="center">
+  <img src="assets/videos/go2_baseline_play.mp4" width="80%" alt="Go2 Baseline Demo">
+</p>
 
 <p align="center"><em>Baseline policy walking forward with velocity commands</em></p>
 
-> 💡 **Video Playback**: Click the video above to play, or view it directly in the [assets/videos/](assets/videos/) directory.
+> 💡 **Note**: The demo video is available in the [assets/videos/](assets/videos/) directory.
+> Due to GitHub limitations, you may need to download the video to view it, or view it directly on GitHub by clicking the file link above.
 
 ### VLA Control Examples
 
